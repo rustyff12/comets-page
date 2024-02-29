@@ -13,7 +13,7 @@
 }
 
 .timeline .milestone {
-    color: #E8EFF0;
+    color: #e8eff0;
     width: 25px;
     height: 150px;
     white-space: nowrap;
@@ -26,7 +26,7 @@
 }
 
 .timeline .era1 {
-    background-color: #1CB0F6;
+    background-color: #1cb0f6;
     flex: 1 1 50%;
 }
 .timeline .era2 {
@@ -38,13 +38,13 @@
     flex: 1 1 15%;
 }
 .timeline .era4 {
-    background-color: #0D47A1;
-    color: #E8EFF0;
+    background-color: #0d47a1;
+    color: #e8eff0;
     flex: 1 1 10%;
 }
 .timeline .era5 {
     background-color: #1d3e81;
-    color: #E8EFF0;
+    color: #e8eff0;
     flex: 1 1 5%;
 }
 
@@ -60,7 +60,7 @@
 
 .timeline-labels .item {
     background-color: #000021;
-    color: #E8EFF0;
+    color: #e8eff0;
     text-align: center;
     padding: 10px;
 }
@@ -84,4 +84,31 @@
     flex: 1 1 2%;
 }
 
-/* Your code here */
+@media print {
+    header,
+    nav {
+        display: none;
+    }
+    .timeline-scroll-area {
+        overflow-x: visible;
+        min-width: auto;
+    }
+}
+
+@media print and (orientation: portrait) {
+    body {
+        margin: 0 auto;
+    }
+    .timeline-scroll-area {
+        overflow-x: visible;
+        transform: scale(0.5);
+        width: 200%;
+        max-width: 100%;
+    }
+}
+/* @media (orientation: portrait) {
+    .timeline-scroll-area {
+        transform: scale(0.5);
+        width: 200%;
+    }
+} */
