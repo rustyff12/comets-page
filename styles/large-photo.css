@@ -1,13 +1,13 @@
 body {
     background-color: #1d3e81;
-    color: #E8EFF0;
+    color: #e8eff0;
     text-align: center;
 }
 img {
     width: 50%;
 }
 a {
-    color: #E8EFF0;
+    color: #e8eff0;
 }
 
 a.backButton {
@@ -17,5 +17,25 @@ a.backButton {
     z-index: 1;
     text-decoration: none;
 }
+/* Here */
+@media print {
+    /* .photo-card {
+        background-color: white;
+        color: black;
+        padding: 0;
+        border-radius: 0;
+        margin: 0 0 10px 0;
+        text-align: center;
+    } */
+    body {
+        background-color: white;
+        color: black;
+    }
+    img {
+        width: 95%;
+    }
 
-/* Your code here */
+    .notPrinted {
+        display: none;
+    }
+}
